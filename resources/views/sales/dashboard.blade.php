@@ -1,42 +1,42 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container mt-5">
-        <h1 class="mb-4">Sales Dashboard</h1>
+    <div class="container mt-5 border rounded border-primary">
+        <h1 class="mb-4 p-3 text-primary"><strong>Sales Dashboard</strong></h1>
 
-        <div class="row">
+        <div class="row text-center">
             <div class="col-md-3">
-                <div class="card">
+                <div class="card mb-3 border-primary">
                     <div class="card-body">
-                        <h5 class="card-title">Today's Sales</h5>
-                        <p class="card-text">{{ $salesToday }}</p>
+                        <p class="card-title border-bottom pb-2 text-primary  border-primary">Today's Sales</p>
+                        <h4 class="card-text">{{ $salesToday }}</h4>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-3">
-                <div class="card">
+                <div class="card mb-3 border-primary">
                     <div class="card-body">
-                        <h5 class="card-title">Yesterday's Sales</h5>
-                        <p class="card-text">{{ $salesYesterday }}</p>
+                        <p class="card-title border-bottom pb-2 text-primary  border-primary">Yesterday's Sales</p>
+                        <h4 class="card-text">{{ $salesYesterday }}</h4>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-3">
-                <div class="card">
+                <div class="card mb-3 border-primary">
                     <div class="card-body">
-                        <h5 class="card-title">This Month's Sales</h5>
-                        <p class="card-text">{{ $salesThisMonth }}</p>
+                        <p class="card-title border-bottom pb-2 text-primary border-primary">This Month's Sales</p>
+                        <h4 class="card-text">{{ $salesThisMonth }}</h4>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="card">
+            <div class="col-md-3 mb-3">
+                <div class="card mb-3 border-primary">
                     <div class="card-body">
-                        <h5 class="card-title">Last Month's Sales</h5>
-                        <p class="card-text">{{ $salesLastMonth }}</p>
+                        <p class="card-title border-bottom pb-2 text-primary border-primary">Last Month's Sales</p>
+                        <h4 class="card-text">{{ $salesLastMonth }}</h4>
                     </div>
                 </div>
             </div>

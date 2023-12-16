@@ -25,7 +25,7 @@ class SalesController extends Controller
 
     public function transactions()
     {
-        $transactions = Product::orderBy('created_at', 'desc')->get();
+        $transactions = Product::orderBy('created_at', 'asc')->get();
 
         return view('sales.transactions', compact('transactions'));
     }
